@@ -13,67 +13,84 @@ html,body{
 
 .header{ 
     background: #5fc0cd;
-    /* position: fixed; */
+    position: fixed;
     width: 100%;
     height: 88px;
-}  
+}   
 
-div span{
+
+ span{
   color:white;
+  line-height: 88px;
 }
 
 .close{ 
-    line-height: 2;
-    /* position: absolute; */
-    left: 14px;
-    top: 44px; 
+    font-size: 16px;
+    padding-left:20px; 
     float: left;
   }
 
-  .login {
+  .login{
     font-size: 18px;
-    line-height: 2;
-    /* position: absolute; */
-    /* left: 150px;
-    top: 45px; */
-    top: 45px;
+    text-align: center;
   }
   
   .register {
     font-size: 16px;
-    line-height: 0.351;
-    /* position: absolute; */
-    /* left: 300px;
-    top: 45px; */
-    top: 45px;
-    float: right; 
+    float: right;
+    padding-right: 20px;
+     
   }
 
 .phone{
-   padding-top:15px; 
+   padding-top:100px; 
+   display: flex;
+   flex-direction: row;
 }
 
 .password{
-  padding-top: 15px;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.image{
+  display: flex;
+  background: white;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+img{
+  width: 13px;
+  height: 20px;
+  margin: 20px;
+  z-index: 1;
+
 }
 
 input{
   width: 100%;
   height: 50px;
   font-size: 16px;
+  border: none;
+  padding:0;
+  padding-left: 20px;
 }
 
-/* .login{
-  padding: 20px;
-} */
+::-webkit-input-placeholder{
+  color:#eaedee;
+}
 
 button{
-  margin-top: 20px;
+    margin-top: 20px;
     font-size: 18px;
     color: white;
     width: 100%;
     height:50px;
     background: #5fc0cd;
+    border: none;
   }
 
   a{
@@ -81,4 +98,17 @@ button{
      color: #5fc0cd;
      font-size: 16px;
      float: right;
+     padding-top: 10px;
   }
+
+  .image::after{
+    content: " ";
+    width: 2px;
+    height: 25px;
+    background-color: #eaedee; 
+  } 
+
+   
+
+  
+
