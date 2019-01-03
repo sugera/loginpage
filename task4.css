@@ -7,52 +7,44 @@ html,body{
     background: #eff0f4;
 }
 
-.wrap{
-  width: 100%;
+body{
+  padding-top: 50px;
 }
 
 .header{ 
-    background: #5fc0cd;
+    top: 0;
+    background: #5fc0cd; 
     position: fixed;
     width: 100%;
-    height: 88px;
+    height: 50px;
+    text-align: center;
+    color:white;
+    line-height: 50px;
+    font-size: 16px;
 }   
 
-
- span{
-  color:white;
-  line-height: 88px;
-}
-
 .close{ 
-    font-size: 16px;
     padding-left:20px; 
     float: left;
   }
 
   .login{
     font-size: 18px;
-    text-align: center;
   }
   
   .register {
-    font-size: 16px;
     float: right;
     padding-right: 20px;
      
   }
 
-.phone{
-   padding-top:100px; 
+.phone,.password{
+   padding-top:10px; 
    display: flex;
    flex-direction: row;
 }
 
-.password{
-  padding-top: 10px;
-  display: flex;
-  flex-direction: row;
-}
+ 
 
 .image{
   display: flex;
@@ -62,12 +54,17 @@ html,body{
   align-items: center;
 }
 
-img{
+.image::after{
+  content: " ";
+  width: 1px;
+  height: 25px;
+  background-color: #eaedee; 
+} 
+
+.image img{
   width: 13px;
   height: 20px;
   margin: 20px;
-  z-index: 1;
-
 }
 
 input{
@@ -75,8 +72,9 @@ input{
   height: 50px;
   font-size: 16px;
   border: none;
-  padding:0;
+  padding:0;  /*去掉输入框的边框*/
   padding-left: 20px;
+  outline: none;   /*去掉输入框获取焦点时的样式*/
 }
 
 ::-webkit-input-placeholder{
@@ -84,13 +82,14 @@ input{
 }
 
 button{
-    margin-top: 20px;
+    margin-top: 30px;
     font-size: 18px;
     color: white;
     width: 100%;
     height:50px;
     background: #5fc0cd;
     border: none;
+    outline: none;
   }
 
   a{
@@ -101,12 +100,7 @@ button{
      padding-top: 10px;
   }
 
-  .image::after{
-    content: " ";
-    width: 2px;
-    height: 25px;
-    background-color: #eaedee; 
-  } 
+   
 
    
 
